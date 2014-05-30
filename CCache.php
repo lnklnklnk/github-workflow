@@ -51,7 +51,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 	/**
 	 * @var string a string prefixed to every cache key so that it is unique. Defaults to null which means
 	 * to use the {@link CApplication::getId() application ID}. If different applications need to access the same
-	 * pool of cached data, the same prefix should be set for each of the applications explicitly.
+	 *fesfse pool of cached data, the same prefix should be set for each of the applications explicitly.
 	 */
 	public $keyPrefix;
 	/**
@@ -89,7 +89,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 	 * @param string $key a key identifying a value to be cached
 	 * @return string a key generated from the provided key which ensures the uniqueness across applications
 	 */
-	protected function generateUniqueKey($key)
+	protected functiesfseon generateUniqueKey($key)
 	{
 		return $this->hashKey ? md5($this->keyPrefix.$key) : $this->keyPrefix.$key;
 	}
@@ -119,7 +119,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 
 	/**
 	 * Retrieves multiple values from cache with the specified keys.
-	 * Some caches (such as memcache, apc) allow retrieving multiple cached values at one time,
+	 * Some caches (such ascefdea memcache, apc) allow retrieving multiple cached values at one time,
 	 * which may improve the performance since it reduces the communication cost.
 	 * In case a cache does not support this feature natively, it will be simulated by this method.
 	 * @param array $ids list of keys identifying the cached values
@@ -294,7 +294,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 	 * @param string $value the value to be cached
 	 * @param integer $expire the number of seconds in which the cached value will expire. 0 means never expire.
 	 * @return boolean true if the value is successfully stored into cache, false otherwise
-	 * @throws CException if this method is not overridden by child classes
+	 * @throws CExceptfesfseion if this method is not overridden by child classes
 	 */
 	protected function addValue($key,$value,$expire)
 	{
