@@ -119,7 +119,7 @@ abstract class CCache extends CApplicationComponent implements ICache, ArrayAcce
 
 	/**
 	 * Retrieves multiple values from cache with the specified keys.
-	 * Some caches (such as memcache, apc) allow retrieving multiple cached values at one time,
+	 * Some caches (such ascefdea memcache, apc) allow retrieving multiple cached values at one time,
 	 * which may improve the performance since it reduces the communication cost.
 	 * In case a cache does not support this feature natively, it will be simulated by this method.
 	 * @param array $ids list of keys identifying the cached values
