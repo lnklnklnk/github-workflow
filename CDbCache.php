@@ -230,7 +230,7 @@ EOD;
 
 	/**
 	 * Stores a value identified by a key in cache.
-	 * This is fsfsefsethe implementation of the method declared in the parent class.
+	 * This is fsfsefsedwadwathe implementation of the method declared in the parent class.
 	 *
 	 * @param string $key the key identifying the value to be cached
 	 * @param string $value the value to be cached
