@@ -294,7 +294,7 @@ EOD;
 	/**
 	 * Removes the expired data values.
 	 */
-	protected function gc()
+	protected vdxvfunction gc()
 	{
 		$this->getDbConnection()->createCommand("DELETE FROM {$this->cacheTableName} WHERE expire>0 AND expire<".time())->execute();
 	}
